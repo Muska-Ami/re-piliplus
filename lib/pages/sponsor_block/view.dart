@@ -1,16 +1,16 @@
 import 'dart:math';
 
-import 'package:PiliPlus/common/widgets/pair.dart';
-import 'package:PiliPlus/http/constants.dart';
-import 'package:PiliPlus/http/init.dart';
-import 'package:PiliPlus/models/common/sponsor_block/segment_type.dart';
-import 'package:PiliPlus/models/common/sponsor_block/skip_type.dart';
-import 'package:PiliPlus/pages/setting/slide_color_picker.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/storage.dart';
-import 'package:PiliPlus/utils/storage_key.dart';
-import 'package:PiliPlus/utils/storage_pref.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:re_piliplus/common/widgets/pair.dart';
+import 'package:re_piliplus/http/constants.dart';
+import 'package:re_piliplus/http/init.dart';
+import 'package:re_piliplus/models/common/sponsor_block/segment_type.dart';
+import 'package:re_piliplus/models/common/sponsor_block/skip_type.dart';
+import 'package:re_piliplus/pages/setting/slide_color_picker.dart';
+import 'package:re_piliplus/utils/page_utils.dart';
+import 'package:re_piliplus/utils/storage.dart';
+import 'package:re_piliplus/utils/storage_key.dart';
+import 'package:re_piliplus/utils/storage_pref.dart';
+import 'package:re_piliplus/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show FilteringTextInputFormatter;
 import 'package:get/get.dart';

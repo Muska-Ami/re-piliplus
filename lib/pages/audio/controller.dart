@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/grpc/audio.dart';
-import 'package:PiliPlus/grpc/bilibili/app/listener/v1.pb.dart'
+import 'package:re_piliplus/common/constants.dart';
+import 'package:re_piliplus/grpc/audio.dart';
+import 'package:re_piliplus/grpc/bilibili/app/listener/v1.pb.dart'
     show
         DetailItem,
         PlayURLResp,
@@ -11,26 +11,26 @@ import 'package:PiliPlus/grpc/bilibili/app/listener/v1.pb.dart'
         PlayInfo,
         ThumbUpReq_ThumbType,
         ListOrder;
-import 'package:PiliPlus/http/constants.dart';
-import 'package:PiliPlus/http/ua_type.dart';
-import 'package:PiliPlus/pages/common/common_intro_controller.dart'
+import 'package:re_piliplus/http/constants.dart';
+import 'package:re_piliplus/http/ua_type.dart';
+import 'package:re_piliplus/pages/common/common_intro_controller.dart'
     show FavMixin;
-import 'package:PiliPlus/pages/dynamics_repost/view.dart';
-import 'package:PiliPlus/pages/main_reply/view.dart';
-import 'package:PiliPlus/pages/video/controller.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/widgets/triple_mixin.dart';
-import 'package:PiliPlus/pages/video/pay_coins/view.dart';
-import 'package:PiliPlus/plugin/pl_player/models/play_repeat.dart';
-import 'package:PiliPlus/plugin/pl_player/models/play_status.dart';
-import 'package:PiliPlus/services/service_locator.dart';
-import 'package:PiliPlus/utils/accounts.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/global_data.dart';
-import 'package:PiliPlus/utils/id_utils.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/storage_pref.dart';
-import 'package:PiliPlus/utils/utils.dart';
-import 'package:PiliPlus/utils/video_utils.dart';
+import 'package:re_piliplus/pages/dynamics_repost/view.dart';
+import 'package:re_piliplus/pages/main_reply/view.dart';
+import 'package:re_piliplus/pages/video/controller.dart';
+import 'package:re_piliplus/pages/video/introduction/ugc/widgets/triple_mixin.dart';
+import 'package:re_piliplus/pages/video/pay_coins/view.dart';
+import 'package:re_piliplus/plugin/pl_player/models/play_repeat.dart';
+import 'package:re_piliplus/plugin/pl_player/models/play_status.dart';
+import 'package:re_piliplus/services/service_locator.dart';
+import 'package:re_piliplus/utils/accounts.dart';
+import 'package:re_piliplus/utils/extension.dart';
+import 'package:re_piliplus/utils/global_data.dart';
+import 'package:re_piliplus/utils/id_utils.dart';
+import 'package:re_piliplus/utils/page_utils.dart';
+import 'package:re_piliplus/utils/storage_pref.dart';
+import 'package:re_piliplus/utils/utils.dart';
+import 'package:re_piliplus/utils/video_utils.dart';
 import 'package:fixnum/fixnum.dart' show Int64;
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

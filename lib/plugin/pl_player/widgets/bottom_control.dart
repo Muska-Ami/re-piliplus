@@ -1,13 +1,13 @@
 import 'dart:async';
 
-import 'package:PiliPlus/common/widgets/progress_bar/audio_video_progress_bar.dart';
-import 'package:PiliPlus/common/widgets/progress_bar/segment_progress_bar.dart';
-import 'package:PiliPlus/pages/video/controller.dart';
-import 'package:PiliPlus/plugin/pl_player/controller.dart';
-import 'package:PiliPlus/plugin/pl_player/view.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/feed_back.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:re_piliplus/common/widgets/progress_bar/audio_video_progress_bar.dart';
+import 'package:re_piliplus/common/widgets/progress_bar/segment_progress_bar.dart';
+import 'package:re_piliplus/pages/video/controller.dart';
+import 'package:re_piliplus/plugin/pl_player/controller.dart';
+import 'package:re_piliplus/plugin/pl_player/view.dart';
+import 'package:re_piliplus/utils/extension.dart';
+import 'package:re_piliplus/utils/feed_back.dart';
+import 'package:re_piliplus/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';

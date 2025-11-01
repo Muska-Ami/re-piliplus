@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:PiliPlus/common/widgets/dialog/report.dart';
-import 'package:PiliPlus/http/dynamics.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models/dynamics/vote_model.dart';
-import 'package:PiliPlus/utils/date_utils.dart';
-import 'package:PiliPlus/utils/num_utils.dart';
+import 'package:re_piliplus/common/widgets/dialog/report.dart';
+import 'package:re_piliplus/http/dynamics.dart';
+import 'package:re_piliplus/http/loading_state.dart';
+import 'package:re_piliplus/models/dynamics/vote_model.dart';
+import 'package:re_piliplus/utils/date_utils.dart';
+import 'package:re_piliplus/utils/num_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart' hide ContextExtensionss;
 

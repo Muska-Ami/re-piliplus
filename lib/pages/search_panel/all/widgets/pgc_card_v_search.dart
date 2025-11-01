@@ -1,10 +1,10 @@
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/common/widgets/badge.dart';
-import 'package:PiliPlus/common/widgets/image/image_save.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/models/search/result.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:re_piliplus/common/constants.dart';
+import 'package:re_piliplus/common/widgets/badge.dart';
+import 'package:re_piliplus/common/widgets/image/image_save.dart';
+import 'package:re_piliplus/common/widgets/image/network_img_layer.dart';
+import 'package:re_piliplus/models/search/result.dart';
+import 'package:re_piliplus/utils/page_utils.dart';
+import 'package:re_piliplus/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 // 视频卡片 - 垂直布局

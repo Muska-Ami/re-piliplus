@@ -1,7 +1,7 @@
-import 'package:PiliPlus/grpc/bilibili/community/service/dm/v1.pb.dart';
-import 'package:PiliPlus/grpc/dm.dart';
-import 'package:PiliPlus/plugin/pl_player/controller.dart';
-import 'package:PiliPlus/services/account_service.dart';
+import 'package:re_piliplus/grpc/bilibili/community/service/dm/v1.pb.dart';
+import 'package:re_piliplus/grpc/dm.dart';
+import 'package:re_piliplus/plugin/pl_player/controller.dart';
+import 'package:re_piliplus/services/account_service.dart';
 import 'package:get/get.dart';
 
 class PlDanmakuController {

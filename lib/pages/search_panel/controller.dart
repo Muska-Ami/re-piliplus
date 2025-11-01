@@ -1,13 +1,13 @@
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/http/search.dart';
-import 'package:PiliPlus/models/common/search/article_search_type.dart';
-import 'package:PiliPlus/models/common/search/search_type.dart';
-import 'package:PiliPlus/models/common/search/user_search_type.dart';
-import 'package:PiliPlus/models/common/search/video_search_type.dart';
-import 'package:PiliPlus/models/search/result.dart';
-import 'package:PiliPlus/pages/common/common_list_controller.dart';
-import 'package:PiliPlus/pages/search_result/controller.dart';
-import 'package:PiliPlus/utils/extension.dart';
+import 'package:re_piliplus/http/loading_state.dart';
+import 'package:re_piliplus/http/search.dart';
+import 'package:re_piliplus/models/common/search/article_search_type.dart';
+import 'package:re_piliplus/models/common/search/search_type.dart';
+import 'package:re_piliplus/models/common/search/user_search_type.dart';
+import 'package:re_piliplus/models/common/search/video_search_type.dart';
+import 'package:re_piliplus/models/search/result.dart';
+import 'package:re_piliplus/pages/common/common_list_controller.dart';
+import 'package:re_piliplus/pages/search_result/controller.dart';
+import 'package:re_piliplus/utils/extension.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 

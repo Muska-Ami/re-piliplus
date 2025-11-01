@@ -1,6 +1,6 @@
-import 'package:PiliPlus/http/api.dart';
-import 'package:PiliPlus/http/init.dart';
-import 'package:PiliPlus/utils/accounts.dart';
+import 'package:re_piliplus/http/api.dart';
+import 'package:re_piliplus/http/init.dart';
+import 'package:re_piliplus/utils/accounts.dart';
 import 'package:dio/dio.dart';
 
 class ValidateHttp {

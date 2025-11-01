@@ -1,7 +1,7 @@
-import 'package:PiliPlus/http/fav.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models_new/fav/fav_note/list.dart';
-import 'package:PiliPlus/pages/common/multi_select/multi_select_controller.dart';
+import 'package:re_piliplus/http/fav.dart';
+import 'package:re_piliplus/http/loading_state.dart';
+import 'package:re_piliplus/models_new/fav/fav_note/list.dart';
+import 'package:re_piliplus/pages/common/multi_select/multi_select_controller.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 
 class FavNoteController

@@ -1,16 +1,16 @@
 import 'dart:convert';
 
-import 'package:PiliPlus/common/widgets/badge.dart';
-import 'package:PiliPlus/common/widgets/dialog/dialog.dart';
-import 'package:PiliPlus/common/widgets/list_tile.dart';
-import 'package:PiliPlus/common/widgets/pendant_avatar.dart';
-import 'package:PiliPlus/grpc/bilibili/app/im/v1.pb.dart'
+import 'package:re_piliplus/common/widgets/badge.dart';
+import 'package:re_piliplus/common/widgets/dialog/dialog.dart';
+import 'package:re_piliplus/common/widgets/list_tile.dart';
+import 'package:re_piliplus/common/widgets/pendant_avatar.dart';
+import 'package:re_piliplus/grpc/bilibili/app/im/v1.pb.dart'
     show Session, SessionId, SessionPageType, SessionType, UnreadStyle;
-import 'package:PiliPlus/models/common/badge_type.dart';
-import 'package:PiliPlus/pages/whisper_secondary/view.dart';
-import 'package:PiliPlus/utils/date_utils.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:re_piliplus/models/common/badge_type.dart';
+import 'package:re_piliplus/pages/whisper_secondary/view.dart';
+import 'package:re_piliplus/utils/date_utils.dart';
+import 'package:re_piliplus/utils/extension.dart';
+import 'package:re_piliplus/utils/utils.dart';
 import 'package:fixnum/fixnum.dart';
 import 'package:flutter/material.dart' hide ListTile;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

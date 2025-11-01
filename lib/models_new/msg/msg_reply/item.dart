@@ -1,6 +1,6 @@
-import 'package:PiliPlus/models_new/msg/msg_reply/content.dart';
+import 'package:re_piliplus/models_new/msg/msg_reply/content.dart';
 
-import 'package:PiliPlus/models_new/msg/msg_reply/user.dart';
+import 'package:re_piliplus/models_new/msg/msg_reply/user.dart';
 
 class MsgReplyItem {
   int? id;

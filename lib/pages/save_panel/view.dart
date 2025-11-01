@@ -1,22 +1,22 @@
 import 'dart:typed_data';
 import 'dart:ui';
 
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/common/widgets/button/icon_button.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:re_piliplus/common/constants.dart';
+import 'package:re_piliplus/common/widgets/button/icon_button.dart';
+import 'package:re_piliplus/common/widgets/image/network_img_layer.dart';
+import 'package:re_piliplus/grpc/bilibili/main/community/reply/v1.pb.dart'
     show ReplyInfo;
-import 'package:PiliPlus/models/common/video/video_type.dart';
-import 'package:PiliPlus/models/dynamics/result.dart';
-import 'package:PiliPlus/pages/dynamics/widgets/dynamic_panel.dart';
-import 'package:PiliPlus/pages/music/controller.dart';
-import 'package:PiliPlus/pages/video/introduction/pgc/controller.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/controller.dart';
-import 'package:PiliPlus/pages/video/reply/widgets/reply_item_grpc.dart';
-import 'package:PiliPlus/utils/context_ext.dart';
-import 'package:PiliPlus/utils/date_utils.dart';
-import 'package:PiliPlus/utils/image_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:re_piliplus/models/common/video/video_type.dart';
+import 'package:re_piliplus/models/dynamics/result.dart';
+import 'package:re_piliplus/pages/dynamics/widgets/dynamic_panel.dart';
+import 'package:re_piliplus/pages/music/controller.dart';
+import 'package:re_piliplus/pages/video/introduction/pgc/controller.dart';
+import 'package:re_piliplus/pages/video/introduction/ugc/controller.dart';
+import 'package:re_piliplus/pages/video/reply/widgets/reply_item_grpc.dart';
+import 'package:re_piliplus/utils/context_ext.dart';
+import 'package:re_piliplus/utils/date_utils.dart';
+import 'package:re_piliplus/utils/image_utils.dart';
+import 'package:re_piliplus/utils/utils.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';

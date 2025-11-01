@@ -1,9 +1,9 @@
-import 'package:PiliPlus/http/live.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models/common/live_search_type.dart';
-import 'package:PiliPlus/models_new/live/live_search/data.dart';
-import 'package:PiliPlus/pages/common/common_list_controller.dart';
-import 'package:PiliPlus/pages/live_search/controller.dart';
+import 'package:re_piliplus/http/live.dart';
+import 'package:re_piliplus/http/loading_state.dart';
+import 'package:re_piliplus/models/common/live_search_type.dart';
+import 'package:re_piliplus/models_new/live/live_search/data.dart';
+import 'package:re_piliplus/pages/common/common_list_controller.dart';
+import 'package:re_piliplus/pages/live_search/controller.dart';
 
 class LiveSearchChildController
     extends CommonListController<LiveSearchData, dynamic> {

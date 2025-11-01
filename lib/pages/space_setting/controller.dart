@@ -1,8 +1,8 @@
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/http/user.dart';
-import 'package:PiliPlus/models_new/space_setting/data.dart';
-import 'package:PiliPlus/models_new/space_setting/privacy.dart';
-import 'package:PiliPlus/pages/common/common_data_controller.dart';
+import 'package:re_piliplus/http/loading_state.dart';
+import 'package:re_piliplus/http/user.dart';
+import 'package:re_piliplus/models_new/space_setting/data.dart';
+import 'package:re_piliplus/models_new/space_setting/privacy.dart';
+import 'package:re_piliplus/pages/common/common_data_controller.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 
 class SpaceSettingController

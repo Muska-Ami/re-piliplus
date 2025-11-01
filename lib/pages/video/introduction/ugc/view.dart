@@ -1,31 +1,31 @@
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/common/widgets/pendant_avatar.dart';
-import 'package:PiliPlus/common/widgets/scroll_physics.dart';
-import 'package:PiliPlus/common/widgets/stat/stat.dart';
-import 'package:PiliPlus/models/common/image_type.dart';
-import 'package:PiliPlus/models/common/stat_type.dart';
-import 'package:PiliPlus/models_new/video/video_detail/data.dart';
-import 'package:PiliPlus/models_new/video/video_detail/staff.dart';
-import 'package:PiliPlus/models_new/video/video_tag/data.dart';
-import 'package:PiliPlus/pages/mine/controller.dart';
-import 'package:PiliPlus/pages/search/widgets/search_text.dart';
-import 'package:PiliPlus/pages/video/controller.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/controller.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/widgets/action_item.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/widgets/page.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/widgets/season.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/widgets/selectable_text.dart';
-import 'package:PiliPlus/utils/app_scheme.dart';
-import 'package:PiliPlus/utils/date_utils.dart';
-import 'package:PiliPlus/utils/duration_utils.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/feed_back.dart';
-import 'package:PiliPlus/utils/id_utils.dart';
-import 'package:PiliPlus/utils/num_utils.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/request_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:re_piliplus/common/constants.dart';
+import 'package:re_piliplus/common/widgets/image/network_img_layer.dart';
+import 'package:re_piliplus/common/widgets/pendant_avatar.dart';
+import 'package:re_piliplus/common/widgets/scroll_physics.dart';
+import 'package:re_piliplus/common/widgets/stat/stat.dart';
+import 'package:re_piliplus/models/common/image_type.dart';
+import 'package:re_piliplus/models/common/stat_type.dart';
+import 'package:re_piliplus/models_new/video/video_detail/data.dart';
+import 'package:re_piliplus/models_new/video/video_detail/staff.dart';
+import 'package:re_piliplus/models_new/video/video_tag/data.dart';
+import 'package:re_piliplus/pages/mine/controller.dart';
+import 'package:re_piliplus/pages/search/widgets/search_text.dart';
+import 'package:re_piliplus/pages/video/controller.dart';
+import 'package:re_piliplus/pages/video/introduction/ugc/controller.dart';
+import 'package:re_piliplus/pages/video/introduction/ugc/widgets/action_item.dart';
+import 'package:re_piliplus/pages/video/introduction/ugc/widgets/page.dart';
+import 'package:re_piliplus/pages/video/introduction/ugc/widgets/season.dart';
+import 'package:re_piliplus/pages/video/introduction/ugc/widgets/selectable_text.dart';
+import 'package:re_piliplus/utils/app_scheme.dart';
+import 'package:re_piliplus/utils/date_utils.dart';
+import 'package:re_piliplus/utils/duration_utils.dart';
+import 'package:re_piliplus/utils/extension.dart';
+import 'package:re_piliplus/utils/feed_back.dart';
+import 'package:re_piliplus/utils/id_utils.dart';
+import 'package:re_piliplus/utils/num_utils.dart';
+import 'package:re_piliplus/utils/page_utils.dart';
+import 'package:re_piliplus/utils/request_utils.dart';
+import 'package:re_piliplus/utils/utils.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -155,17 +155,7 @@ class _UgcIntroPanelState extends State<UgcIntroPanel> {
                               ),
                             ),
                           ),
-                        if (isHorizontal) ...[
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: actionGrid(
-                              context,
-                              isLoading,
-                              videoDetail,
-                              introController,
-                            ),
-                          ),
-                        ],
+                        // 原始 视频操作列表 位置
                       ],
                     ),
                   ),
@@ -188,6 +178,27 @@ class _UgcIntroPanelState extends State<UgcIntroPanel> {
                       theme: expandTheme,
                     ),
                   const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      Text(
+                        'BV号: ',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: theme.colorScheme.outline,
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () => Utils.copyText('${videoDetail.bvid}'),
+                        child: Text(
+                          videoDetail.bvid ?? '',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: theme.colorScheme.secondary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                   Stack(
                     clipBehavior: Clip.none,
                     children: [
@@ -221,9 +232,19 @@ class _UgcIntroPanelState extends State<UgcIntroPanel> {
                       ),
                     ),
                   ],
-                  if (isHorizontal && Utils.isDesktop)
-                    ..._infos(theme, videoDetail)
-                  else
+                  if (isHorizontal && Utils.isDesktop) ...[
+                    Container(
+                      margin: const EdgeInsets.only(top: 8, bottom: 8),
+                      child: actionGrid(
+                        context,
+                        isLoading,
+                        videoDetail,
+                        introController,
+                      ),
+                    ),
+
+                    ..._infos(theme, videoDetail),
+                  ] else
                     ExpandablePanel(
                       controller: introController.expandableCtr,
                       collapsed: const SizedBox.shrink(),
@@ -320,19 +341,7 @@ class _UgcIntroPanelState extends State<UgcIntroPanel> {
   );
 
   List<Widget> _infos(ThemeData theme, VideoDetailData videoDetail) => [
-    const SizedBox(height: 8),
-    GestureDetector(
-      onTap: () => Utils.copyText('${videoDetail.bvid}'),
-      child: Text(
-        videoDetail.bvid ?? '',
-        style: TextStyle(
-          fontSize: 14,
-          color: theme.colorScheme.secondary,
-        ),
-      ),
-    ),
     if (videoDetail.descV2?.isNotEmpty == true) ...[
-      const SizedBox(height: 8),
       selectableRichText(
         style: const TextStyle(height: 1.4),
         buildContent(theme, videoDetail),

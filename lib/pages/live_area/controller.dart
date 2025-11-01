@@ -1,9 +1,9 @@
-import 'package:PiliPlus/http/live.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models_new/live/live_area_list/area_item.dart';
-import 'package:PiliPlus/models_new/live/live_area_list/area_list.dart';
-import 'package:PiliPlus/pages/common/common_list_controller.dart';
-import 'package:PiliPlus/services/account_service.dart';
+import 'package:re_piliplus/http/live.dart';
+import 'package:re_piliplus/http/loading_state.dart';
+import 'package:re_piliplus/models_new/live/live_area_list/area_item.dart';
+import 'package:re_piliplus/models_new/live/live_area_list/area_list.dart';
+import 'package:re_piliplus/pages/common/common_list_controller.dart';
+import 'package:re_piliplus/services/account_service.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 

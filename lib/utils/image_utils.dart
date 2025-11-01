@@ -1,13 +1,13 @@
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/http/init.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/global_data.dart';
-import 'package:PiliPlus/utils/permission_handler.dart';
-import 'package:PiliPlus/utils/storage_pref.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:re_piliplus/common/constants.dart';
+import 'package:re_piliplus/http/init.dart';
+import 'package:re_piliplus/utils/extension.dart';
+import 'package:re_piliplus/utils/global_data.dart';
+import 'package:re_piliplus/utils/permission_handler.dart';
+import 'package:re_piliplus/utils/storage_pref.dart';
+import 'package:re_piliplus/utils/utils.dart';
 import 'package:dio/dio.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';

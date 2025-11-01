@@ -46,15 +46,15 @@ jobs:
 
       - name: Prepare Upload
         run: |
-          mkdir -p Release/PiliPlus-Win
-          mkdir -p PiliPlus-Win-Setup
-          mv build/windows/x64/runner/Release/* Release/PiliPlus-Win/
-          mv dist/**/*.exe PiliPlus-Win-Setup/PiliPlus_windows_${{env.version}}_x64_setup.exe
+          mkdir -p Release/re_piliplus-Win
+          mkdir -p re_piliplus-Win-Setup
+          mv build/windows/x64/runner/Release/* Release/re_piliplus-Win/
+          mv dist/**/*.exe re_piliplus-Win-Setup/re_piliplus_windows_${{env.version}}_x64_setup.exe
 
       - name: Compress
         if: ${{ github.event.inputs.tag != '' }}
         run: |
-          Compress-Archive -Path "Release/PiliPlus-Win" -DestinationPath "PiliPlus_windows_${{env.version}}_x64.zip"
+          Compress-Archive -Path "Release/re_piliplus-Win" -DestinationPath "re_piliplus_windows_${{env.version}}_x64.zip"
         shell: pwsh
 
       - name: Release
@@ -64,8 +64,8 @@ jobs:
           tag_name: ${{ github.event.inputs.tag }}
           name: ${{ github.event.inputs.tag }}
           files: |
-            PiliPlus_windows_*.zip
-            PiliPlus-Win-Setup/PiliPlus_windows_*.exe
+            re_piliplus_windows_*.zip
+            re_piliplus-Win-Setup/re_piliplus_windows_*.exe
 
       - name: Upload windows file release
         uses: actions/upload-artifact@v4
@@ -77,4 +77,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Windows-setup-x64-release
-          path: PiliPlus-Win-Setup
+          path: re_piliplus-Win-Setup

@@ -1,4 +1,4 @@
-import 'package:PiliPlus/utils/extension.dart';
+import 'package:re_piliplus/utils/extension.dart';
 import 'package:hive/hive.dart';
 
 part 'info.g.dart';

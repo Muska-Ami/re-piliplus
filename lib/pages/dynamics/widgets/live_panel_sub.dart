@@ -1,8 +1,8 @@
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/common/widgets/badge.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/models/common/badge_type.dart';
-import 'package:PiliPlus/models/dynamics/result.dart';
+import 'package:re_piliplus/common/constants.dart';
+import 'package:re_piliplus/common/widgets/badge.dart';
+import 'package:re_piliplus/common/widgets/image/network_img_layer.dart';
+import 'package:re_piliplus/models/common/badge_type.dart';
+import 'package:re_piliplus/models/dynamics/result.dart';
 import 'package:flutter/material.dart';
 
 Widget livePanelSub(

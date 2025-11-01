@@ -1,22 +1,22 @@
 import 'dart:convert';
 
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/common/widgets/badge.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/grpc/bilibili/im/interfaces/v1.pb.dart'
+import 'package:re_piliplus/common/constants.dart';
+import 'package:re_piliplus/common/widgets/badge.dart';
+import 'package:re_piliplus/common/widgets/image/network_img_layer.dart';
+import 'package:re_piliplus/grpc/bilibili/im/interfaces/v1.pb.dart'
     show EmotionInfo;
-import 'package:PiliPlus/grpc/bilibili/im/type.pb.dart' show Msg, MsgType;
-import 'package:PiliPlus/http/search.dart';
-import 'package:PiliPlus/models/common/badge_type.dart';
-import 'package:PiliPlus/models/common/image_preview_type.dart';
-import 'package:PiliPlus/models/common/image_type.dart';
-import 'package:PiliPlus/utils/app_scheme.dart';
-import 'package:PiliPlus/utils/date_utils.dart';
-import 'package:PiliPlus/utils/duration_utils.dart';
-import 'package:PiliPlus/utils/id_utils.dart';
-import 'package:PiliPlus/utils/image_utils.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:re_piliplus/grpc/bilibili/im/type.pb.dart' show Msg, MsgType;
+import 'package:re_piliplus/http/search.dart';
+import 'package:re_piliplus/models/common/badge_type.dart';
+import 'package:re_piliplus/models/common/image_preview_type.dart';
+import 'package:re_piliplus/models/common/image_type.dart';
+import 'package:re_piliplus/utils/app_scheme.dart';
+import 'package:re_piliplus/utils/date_utils.dart';
+import 'package:re_piliplus/utils/duration_utils.dart';
+import 'package:re_piliplus/utils/id_utils.dart';
+import 'package:re_piliplus/utils/image_utils.dart';
+import 'package:re_piliplus/utils/page_utils.dart';
+import 'package:re_piliplus/utils/utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
